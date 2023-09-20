@@ -75,8 +75,61 @@
 
 
 # Keyword Arguments---------------------------------------------
-def fun(a,b,c):
-    print(a)
-    print(b)
-    print(c)
-fun(c="Sunil",a='Jaipur',b='Kota')
+# def fun(a,b,c):
+#     print(a)
+#     print(b)
+#     print(c)
+# fun(c="Sunil",a='Jaipur',b='Kota')
+
+
+# Empty Function(Pass Statement)-------------------------------------
+# def fun():
+#     pass
+# fun()
+
+
+# Local Variable--------------------
+# def fun():
+#     a=10
+#     print(a)
+# fun()
+
+
+# Globle Variable-----------------------------------
+# x=20
+# def fun():
+#     print(x)
+# fun()
+
+# Change value of globle variable-----------------------------
+# x=20
+# def fun():
+#     global x
+#     print(x)
+#     x=50
+#     print(x)
+# fun()
+
+
+# globals Method--------------------------------------
+# a=20
+# def fun():
+#     a=10
+#     print(a)#10
+#     print(globals())
+#     print(globals()['a'])#20
+# fun()
+
+
+# Recurtion function------------------
+x=1
+def fun():
+    global x
+    print(x,end=" ")
+    x=x+1
+    if x>5:
+        return
+    fun()
+fun()
+
+
