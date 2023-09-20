@@ -122,14 +122,19 @@
 
 
 # Recurtion function------------------
-x=1
-def fun():
-    global x
-    print(x,end=" ")
-    x=x+1
-    if x>5:
-        return
-    fun()
-fun()
+# x=1
+# def fun():
+#     global x
+#     print(x,end=" ")
+#     x=x+1
+#     if x>5:
+#         return
+#     fun()
+# fun()
 
+
+# Lambda/Anonymous------------------------------
+# lamda arguments : expretion
+fun = lambda x:x*2
+print(fun(5))
 
